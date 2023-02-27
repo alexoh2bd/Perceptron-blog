@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "test.html",
+    "href": "test.html",
+    "title": "Perceptron Blog",
+    "section": "",
+    "text": "np.random.seed(3000)\nn = 100\np_features = 3\n\nX, y = make_blobs(n_samples = 200, n_features = p_features - 1, centers = [(-2, 2), (2, 4)])\n\nfig = plt.scatter(X[:,0], X[:,1], c = y)\nxlab = plt.xlabel(\"Feature 1\")\nylab = plt.ylabel(\"Feature 2\")\n\np2 = Perceptron() \n\np2.fit(X, y)\n\nfig = plt.scatter(X[:,0], X[:,1], c = y)\nfig = draw_line(p2.w, -2, 2)\n\nxlab = plt.xlabel(\"Feature 1\")\nylab = plt.ylabel(\"Feature 2\")\nprint(p2.history[-10:])\n\n[0.98, 0.98, 0.98, 0.98, 0.985, 0.98, 0.98, 0.98, 0.98, 0.98]\n\n\n\n\n\n\nnp.random.seed(3000)\nn = 100\np_features = 5\n\nX, y = make_blobs(n_samples = 200, n_features = p_features - 1, centers = [(-2, 2), (2, 4)])\n\n\np3 = Perceptron() \n\np3.fit(X, y)\n\nprint(p3.history[:10])\nprint(p3.history[-10:])\n\n[0.51, 0.825, 0.915, 0.935, 0.965, 0.965, 0.965, 0.965, 0.965, 0.96]\n[0.98, 0.98, 0.98, 0.98, 0.985, 0.98, 0.98, 0.98, 0.98, 0.98]"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My Awesome CSCI 0451 Blog",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
     "objectID": "posts/example-blog-post/index.html",
     "href": "posts/example-blog-post/index.html",
     "title": "Hello Blog",
@@ -12,19 +33,5 @@
     "title": "Hello Blog",
     "section": "Math",
     "text": "Math\nIn addition to regular text using the Markdown specification, you can also write mathematics, enclosed between dollar signs. The syntax for writing math is very similar to the syntax used in the \\(\\LaTeX\\) markup language. For example, $f(x) \\approx y$ renders to \\(f(x) \\approx y\\). To place complex mathematical expressions on their own lines, use double dollar signs. For example, the expression\n$$\\mathcal{L}(a, b) = \\sum_{i = 1}^n (ax_i + b - y_i)^2$$\nrenders to:\n\\[\\mathcal{L}(a, b) = \\sum_{i = 1}^n (ax_i + b - y_i)^2\\;.\\]\nBehind the scenes, math is powered by the MathJax engine. For more on how to write math, check this handy tutorial and quick reference."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "My Awesome CSCI 0451 Blog",
-    "section": "",
-    "text": "An example blog post illustrating the key techniques you’ll need to demonstrate your learning in CSCI 0451.\n\n\n\n\n\n\nJan 10, 2023\n\n\nPhil Chodrow\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
   }
 ]
